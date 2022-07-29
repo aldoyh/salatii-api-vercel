@@ -1,0 +1,5 @@
+{
+    "require": {
+        "khaled.alshamaa/ar-php": "^6.3"
+    }
+}
