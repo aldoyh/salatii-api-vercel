@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "bf34289e-d6db-4e00-b62b-3cc716e199d9",
+		"name": "Turkish Directorate of Religious Affairs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7487704"
+	},
+	"item": [
+		{
+			"name": "List of Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/countries",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Cities or States of a Country",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/cities?country=33",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cities"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "33"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of Regions in a City or State",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/regions?country=2&city=503",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"regions"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "2"
+						},
+						{
+							"key": "city",
+							"value": "503"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prayer Times Data for a Region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/data?region=9541",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"data"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": "9541"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Prayer Times Data for a Region",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/data?region=132",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"data"
+							],
+							"query": [
+								{
+									"key": "region",
+									"value": "132"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, X-Requested-With, Content-Type, Accept"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2403"
+						},
+						{
+							"key": "Etag",
+							"value": "W/\"963-X7PiGUGTwT8/KRYTl9hFt5HD8Js\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Jul 2022 07:08:54 GMT"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    [\n        \"29 Temmuz 2022 Cuma\",\n        \"03:54\",\n        \"05:37\",\n        \"13:00\",\n        \"16:54\",\n        \"20:13\",\n        \"21:49\"\n    ],\n    [\n        \"30 Temmuz 2022 Cumartesi\",\n        \"03:55\",\n        \"05:38\",\n        \"13:00\",\n        \"16:53\",\n        \"20:12\",\n        \"21:48\"\n    ],\n    [\n        \"31 Temmuz 2022 Pazar\",\n        \"03:57\",\n        \"05:39\",\n        \"13:00\",\n        \"16:53\",\n        \"20:11\",\n        \"21:46\"\n    ],\n    [\n        \"01 Ağustos 2022 Pazartesi\",\n        \"03:58\",\n        \"05:40\",\n        \"13:00\",\n        \"16:53\",\n        \"20:10\",\n        \"21:45\"\n    ],\n    [\n        \"02 Ağustos 2022 Salı\",\n        \"04:00\",\n        \"05:41\",\n        \"13:00\",\n        \"16:52\",\n        \"20:09\",\n        \"21:43\"\n    ],\n    [\n        \"03 Ağustos 2022 &#199;arşamba\",\n        \"04:01\",\n        \"05:42\",\n        \"13:00\",\n        \"16:52\",\n        \"20:08\",\n        \"21:42\"\n    ],\n    [\n        \"04 Ağustos 2022 Perşembe\",\n        \"04:03\",\n        \"05:43\",\n        \"13:00\",\n        \"16:52\",\n        \"20:07\",\n        \"21:40\"\n    ],\n    [\n        \"05 Ağustos 2022 Cuma\",\n        \"04:04\",\n        \"05:44\",\n        \"13:00\",\n        \"16:51\",\n        \"20:06\",\n        \"21:38\"\n    ],\n    [\n        \"06 Ağustos 2022 Cumartesi\",\n        \"04:05\",\n        \"05:44\",\n        \"13:00\",\n        \"16:51\",\n        \"20:05\",\n        \"21:37\"\n    ],\n    [\n        \"07 Ağustos 2022 Pazar\",\n        \"04:07\",\n        \"05:45\",\n        \"12:59\",\n        \"16:50\",\n        \"20:04\",\n        \"21:35\"\n    ],\n    [\n        \"08 Ağustos 2022 Pazartesi\",\n        \"04:08\",\n        \"05:46\",\n        \"12:59\",\n        \"16:50\",\n        \"20:02\",\n        \"21:34\"\n    ],\n    [\n        \"09 Ağustos 2022 Salı\",\n        \"04:10\",\n        \"05:47\",\n        \"12:59\",\n        \"16:49\",\n        \"20:01\",\n        \"21:32\"\n    ],\n    [\n        \"10 Ağustos 2022 &#199;arşamba\",\n        \"04:11\",\n        \"05:48\",\n        \"12:59\",\n        \"16:49\",\n        \"20:00\",\n        \"21:30\"\n    ],\n    [\n        \"11 Ağustos 2022 Perşembe\",\n        \"04:13\",\n        \"05:49\",\n        \"12:59\",\n        \"16:48\",\n        \"19:59\",\n        \"21:29\"\n    ],\n    [\n        \"12 Ağustos 2022 Cuma\",\n        \"04:14\",\n        \"05:50\",\n        \"12:59\",\n        \"16:48\",\n        \"19:57\",\n        \"21:27\"\n    ],\n    [\n        \"13 Ağustos 2022 Cumartesi\",\n        \"04:15\",\n        \"05:51\",\n        \"12:59\",\n        \"16:47\",\n        \"19:56\",\n        \"21:25\"\n    ],\n    [\n        \"14 Ağustos 2022 Pazar\",\n        \"04:17\",\n        \"05:52\",\n        \"12:58\",\n        \"16:47\",\n        \"19:55\",\n        \"21:24\"\n    ],\n    [\n        \"15 Ağustos 2022 Pazartesi\",\n        \"04:18\",\n        \"05:53\",\n        \"12:58\",\n        \"16:46\",\n        \"19:53\",\n        \"21:22\"\n    ],\n    [\n        \"16 Ağustos 2022 Salı\",\n        \"04:20\",\n        \"05:54\",\n        \"12:58\",\n        \"16:46\",\n        \"19:52\",\n        \"21:20\"\n    ],\n    [\n        \"17 Ağustos 2022 &#199;arşamba\",\n        \"04:21\",\n        \"05:55\",\n        \"12:58\",\n        \"16:45\",\n        \"19:51\",\n        \"21:18\"\n    ],\n    [\n        \"18 Ağustos 2022 Perşembe\",\n        \"04:22\",\n        \"05:56\",\n        \"12:58\",\n        \"16:44\",\n        \"19:49\",\n        \"21:17\"\n    ],\n    [\n        \"19 Ağustos 2022 Cuma\",\n        \"04:24\",\n        \"05:57\",\n        \"12:57\",\n        \"16:44\",\n        \"19:48\",\n        \"21:15\"\n    ],\n    [\n        \"20 Ağustos 2022 Cumartesi\",\n        \"04:25\",\n        \"05:58\",\n        \"12:57\",\n        \"16:43\",\n        \"19:47\",\n        \"21:13\"\n    ],\n    [\n        \"21 Ağustos 2022 Pazar\",\n        \"04:26\",\n        \"05:59\",\n        \"12:57\",\n        \"16:42\",\n        \"19:45\",\n        \"21:11\"\n    ],\n    [\n        \"22 Ağustos 2022 Pazartesi\",\n        \"04:28\",\n        \"06:00\",\n        \"12:57\",\n        \"16:42\",\n        \"19:44\",\n        \"21:09\"\n    ],\n    [\n        \"23 Ağustos 2022 Salı\",\n        \"04:29\",\n        \"06:01\",\n        \"12:56\",\n        \"16:41\",\n        \"19:42\",\n        \"21:08\"\n    ],\n    [\n        \"24 Ağustos 2022 &#199;arşamba\",\n        \"04:30\",\n        \"06:02\",\n        \"12:56\",\n        \"16:40\",\n        \"19:41\",\n        \"21:06\"\n    ],\n    [\n        \"25 Ağustos 2022 Perşembe\",\n        \"04:32\",\n        \"06:02\",\n        \"12:56\",\n        \"16:39\",\n        \"19:39\",\n        \"21:04\"\n    ],\n    [\n        \"26 Ağustos 2022 Cuma\",\n        \"04:33\",\n        \"06:03\",\n        \"12:56\",\n        \"16:39\",\n        \"19:38\",\n        \"21:02\"\n    ],\n    [\n        \"27 Ağustos 2022 Cumartesi\",\n        \"04:34\",\n        \"06:04\",\n        \"12:55\",\n        \"16:38\",\n        \"19:36\",\n        \"21:00\"\n    ],\n    [\n        \"28 Ağustos 2022 Pazar\",\n        \"04:36\",\n        \"06:05\",\n        \"12:55\",\n        \"16:37\",\n        \"19:35\",\n        \"20:58\"\n    ]\n]"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://namaz-vakti-api.herokuapp.com"
+		}
+	]
+}
