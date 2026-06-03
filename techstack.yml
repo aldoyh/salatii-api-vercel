@@ -1,0 +1,20 @@
+repo_name: aldoyh/salatii-api-vercel
+report_id: e197d9dce2217ce25805185ffcf029fb
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-10T18:26:38+00:00'
+requested_by: aldoyh
+provider: github
+branch: main
+detected_tools_count: 1
+tools:
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/aldoyh/salatii-api-vercel
+  detection_source: Repo Metadata
